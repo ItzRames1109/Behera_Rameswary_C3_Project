@@ -10,11 +10,13 @@ public class Restaurant {
     public LocalTime closingTime;
     private List<Item> menu = new ArrayList<Item>();
 
+
     public Restaurant(String name, String location, LocalTime openingTime, LocalTime closingTime) {
         this.name = name;
         this.location = location;
         this.openingTime = openingTime;
         this.closingTime = closingTime;
+
     }
 
     public boolean isRestaurantOpen() {
@@ -63,8 +65,12 @@ public class Restaurant {
 
     }
 
-    public String getName() {
-        return name;
+    public String getName() { return name;}
+
+    public int getOrderPrice(List<String> itemNames) {
+        int orderPrice= 0;
+
+        return orderPrice;
     }
 
 }
